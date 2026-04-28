@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        - name: Test de fallo (temporal)
+  run: exit 1
 
       - name: Install ShellCheck
         run: sudo apt-get update && sudo apt-get install -y shellcheck
